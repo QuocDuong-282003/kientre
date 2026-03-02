@@ -70,11 +70,11 @@ export default function Teachers() {
 
                 <div className="max-w-4xl mx-auto  border-dotted border-blue-500 p-8 bg-transparent text-center">
                     <h2 className="text-3xl md:text-[40px] leading-tight font-extrabold mb-4 text-[#1E293B]">
-                        Người thầy cô <span className="text-[#3B82F6]">đồng hành cùng con</span><br />
-                        <span className="text-[#3B82F6]">trên từng bước</span> học tập
+                        Đội ngũ  <span className="text-[#3B82F6]">"Kiến thợ"</span> cần mẫn<br />
+                        - <span >Người dẫn đường</span> <span className="text-[#3B82F6]"> tận tâm</span>
                     </h2>
-                    <p className="text-lg text-gray-700 font-medium">
-                        Giỏi chuyên môn và thấu hiểu tâm lý học sinh
+                    <p className="text-lg text-black font-medium">
+                        Quy tụ đội ngũ giáo viên giàu kinh nghiệm, những người "dẫn đường" am tường chuyên môn      giúp học sinh làm chủ kiến thức và tự tin chinh phục mọi kỳ thi
                     </p>
                 </div>
 
@@ -100,7 +100,7 @@ export default function Teachers() {
                             href="/ve-kientre"
                             className="inline-flex items-center justify-center bg-[#F97316] hover:bg-[#EA580C] text-white text-lg md:text-[19px] font-bold py-3.5 px-8 md:px-10 rounded-full transition-colors drop-shadow-[0_8px_16px_rgba(249,115,22,0.3)] shadow-[0_4px_14px_0_rgb(234,88,12,0.39)]"
                         >
-                            Gặp gỡ đội ngũ <ArrowRight className="ml-2 w-6 h-6 shrink-0" strokeWidth={2.5} />
+                            Gặp gỡ "Kiến thợ" <ArrowRight className="ml-2 w-6 h-6 shrink-0" strokeWidth={2.5} />
                         </Link>
                     </div>
                 </div>

@@ -35,8 +35,8 @@ export default function Testimonials() {
 
                 {/* headers */}
                 <h2 className="text-3xl md:text-[42px] font-extrabold text-[#1f2937] leading-[1.3] mb-4 tracking-tight">
-                    Sự tiến bộ của con <span className="text-[#3b82f6]">được đo</span><br />
-                    <span className="text-[#3b82f6]">bằng hành trình,</span> không chỉ điểm số
+                    Lắng nghe câu chuyện <span className="text-[#3b82f6]"> trưởng thành </span><br />
+                    <span >của các </span> <span className="text-[#3b82f6]" >"Chiến binh kiến"</span>
                 </h2>
                 <p className="text-black text-[18px] mb-24 md:mb-32 font-medium tracking-tight">
                     Mỗi học sinh tại Kiến Trẻ là một câu chuyện trưởng thành
@@ -85,10 +85,22 @@ export default function Testimonials() {
                 </div>
 
                 {/* bottom */}
-                <div className="mt-20">
+                {/* <div className="mt-20">
                     <Link href="/" className="inline-flex items-center text-[#3b82f6] hover:text-blue-700 font-bold text-[17px] group transition-colors">
                         Xem thêm hành trình học sinh <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
                     </Link>
+                </div> */}
+
+                <div className="flex justify-center pb-8 mt-16 md:mt-24">
+                    <div className="inline-block px-4 md:px-12 bg-transparent text-center">
+                        <Link
+                            href="/ve-kientre"
+                            className="inline-flex items-center justify-center bg-[#F97316] hover:bg-[#EA580C] text-white text-lg md:text-[19px] font-bold py-3.5 px-8 md:px-10 rounded-full transition-colors drop-shadow-[0_8px_16px_rgba(249,115,22,0.3)] shadow-[0_4px_14px_0_rgb(234,88,12,0.39)]"
+                        >
+                            Hành trình "phá kén" ngoạn mục
+                            <ArrowRight className="ml-2 w-6 h-6 shrink-0" strokeWidth={2.5} />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

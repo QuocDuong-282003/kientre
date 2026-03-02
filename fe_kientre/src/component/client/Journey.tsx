@@ -4,33 +4,33 @@ import React, { useState } from 'react';
 const journeySteps = [
     {
         id: '01',
-        title: 'Hành trình',
-        subtitle: 'hạt giống',
-        desc: 'Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.',
+        title: 'Gieo mầm',
+        subtitle: 'tư duy',
+        desc: 'Đây là giai đoạn đặt nền móng, nơi Kiến Trẻ giúp con nhận diện thế mạnh và khơi dậy sự chủ động với tri thức. Chúng tôi tập trung xây dựng thói quen tư duy "độc lập" và sự "tự tin" ngay từ những bài học đầu tiên, chuẩn bị cho con một tâm thế vững vàng để con sẵn sàng bứt phá trong lộ trình phía trước.',
         img: '/tree/tree1.png',
         position: 'top-left'
     },
     {
         id: '02',
-        title: 'Hành trình',
-        subtitle: 'nảy mầm',
-        desc: 'Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.',
+        title: 'Bản lĩnh',
+        subtitle: 'vươn mình',
+        desc: 'Khi hạt giống "tư duy" đã bén rễ, con bắt đầu chuyển mình mạnh mẽ để thoát khỏi vùng an toàn. Giai đoạn này tập trung vào việc hình thành các thói quen học tập chủ động và củng cố kỹ năng, giúp tư duy của con trở nên rõ nét và vững chãi hơn.',
         img: '/tree/mầm.png',
         position: 'top-right'
     },
     {
         id: '03',
-        title: 'Hành trình',
-        subtitle: 'vươn cành',
-        desc: 'Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.',
+        title: '"Gặt hái"',
+        subtitle: 'vị thế dâu',
+        desc: 'Dưới sự dẫn dắt sát sao, con vươn cao tới những kiến thức chuyên môn và kỹ năng giải quyết vấn đề sắc bén. Đây là thời điểm con khẳng định nội lực, không ngừng mở rộng tầm nhìn và sẵn sàng đối diện với những thử thách học thuật hay các kỳ thi quan trọng.',
         img: '/tree/tree3.png',
         position: 'bottom-left'
     },
     {
         id: '04',
-        title: 'Hành trình',
-        subtitle: 'kết quả',
-        desc: 'Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.',
+        title: 'Khẳng định',
+        subtitle: 'tầm vóc',
+        desc: 'Quá trình rèn luyện đơm hoa kết trái bằng những kết quả xứng đáng. Con tự tin chinh phục tấm vé trường chuyên hay các giải thưởng quốc tế, tạo dựng nền tảng vững vàng để tự tin bước ra thế giới với tâm thế của "người dẫn đầu".',
         img: '/tree/ketqua.png',
         position: 'bottom-right'
     }
@@ -41,10 +41,10 @@ export default function Journey() {
 
     const getPosClasses = (pos: string) => {
         switch (pos) {
-            case 'top-left': return "md:absolute md:top-[15%] md:left-13 lg:left-13";
-            case 'top-right': return "md:absolute md:top-[15%] md:right-3 lg:right-3";
-            case 'bottom-left': return "md:absolute md:bottom-[15%] md:left-13 lg:left-13";
-            case 'bottom-right': return "md:absolute md:bottom-[15%] md:right-3 lg:right-3";
+            case 'top-left': return "md:absolute md:top-[13%] md:left-13 lg:left-13";
+            case 'top-right': return "md:absolute md:top-[13%] md:right-3 lg:right-3";
+            case 'bottom-left': return "md:absolute md:bottom-[0%] md:left-13 lg:left-13";
+            case 'bottom-right': return "md:absolute md:bottom-[0%] md:right-3 lg:right-3";
             default: return "";
         }
     };
@@ -55,10 +55,12 @@ export default function Journey() {
                 {/* Header Section */}
                 <div className="text-center mb-16 px-4 relative z-20">
                     <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#2563eb] tracking-tight">
-                        Hành trình <span className="text-gray-900">của con</span>
+                        Khơi mở bản sắc -<span className="text-gray-900"> Con vươn mình</span> <span className='text-[#2563eb] '>đón nắng</span>
+
                     </h2>
-                    <p className="text-black text-lg sm:text-xl max-w-2xl mx-auto">
-                        Xây dựng tư duy nền tảng vững chắc
+                    <p className="text-black font-medium text-lg sm:text-xl max-w-2xl mx-auto mb-4">
+                        Từ những hạt giống tư duy đầu tiên, Kiến Trẻ đồng hành cùng con dệt nên hành trình lớn khôn đầy "bản lĩnh"
+                        vững chắc
                     </p>
                 </div>
 
@@ -88,15 +90,15 @@ export default function Journey() {
                         return (
                             <div
                                 key={step.id}
-                                className={`w-full max-w-[340px] md:max-w-none md:w-auto z-20 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${getPosClasses(step.position)}`}
+                                className={`w-full max-w-[350px] md:max-w-none md:w-auto z-20 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${getPosClasses(step.position)}`}
                                 onMouseEnter={() => setActiveStep(index)}
                             >
                                 <div className={`
                                     relative bg-white rounded-2xl flex items-center shadow-sm 
                                     transition-all duration-500 border-[2px] border-[#3b82f6]
                                     ${isActive
-                                        ? 'w-[88vw] md:w-[410px] flex-col items-start gap-2 px-6 py-6 pl-[115px] md:pl-[85px] -ml-4 md:ml-0'
-                                        : 'py-3.5 pr-6 pl-[105px] md:pl-[66px] w-[83vw] md:w-[360px] lg:w-[380px] flex-row items-center min-h-[96px] -ml-3 md:ml-0'}
+                                        ? 'w-[88vw] md:w-[410px] flex-col items-start gap-2 px-4 py-5 pl-[110px] md:pl-[80px]'
+                                        : 'py-3.5 pr-6 pl-[105px] md:pl-[80px] w-[83vw] md:w-[360px] lg:w-[380px] flex-row items-center min-h-[96px]'}
                                 `}>
 
                                     <div className="absolute -top-[15px] -right-[15px] md:-top-[20px] md:-right-[20px] w-8 h-8 md:w-10 md:h-10 rounded-full bg-white border-[3px] border-[#3b82f6] flex items-center justify-center text-[#2563eb] font-extrabold text-[14px] md:text-[16px] shadow-sm z-30">
@@ -135,7 +137,7 @@ export default function Journey() {
 
                                         <div className={`
                                             overflow-hidden transition-all duration-500 text-[#0f172a] font-semibold text-[14px] md:text-[15px] leading-relaxed w-full
-                                            ${isActive ? 'max-h-[200px] opacity-100 mt-4 -ml-16 md:-ml-[45px]' : 'max-h-0 opacity-0 mt-0 -ml-[5px]'}
+                                            ${isActive ? 'max-h-[220px] opacity-100 mt-3 -ml-8' : 'max-h-0 opacity-0 mt-0'}
                                         `}>
                                             {step.desc}
                                         </div>

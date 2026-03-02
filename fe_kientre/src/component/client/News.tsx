@@ -36,10 +36,11 @@ export default function News() {
 
                 {/* header */}
                 <h2 className="text-3xl md:text-[42px] font-extrabold text-[#1f2937] leading-[1.3] mb-4 tracking-tight px-2">
-                    Kiến Trẻ <span className="text-[#3b82f6]">hôm nay</span>
+                    Chuyện nhà Kiến - Từ <span className="text-[#3b82f6]"> lớp học </span > đến <span className="text-[#3b82f6]"> Đấu trường</span>
                 </h2>
-                <p className="text-gray-500 text-lg md:text-[17px] mb-10 font-medium tracking-tight px-4">
-                    Cập nhật hoạt động & thông tin mới nhất từ Kiến Trẻ
+                <p className="text-black text-lg md:text-[17px] mb-10 font-medium tracking-tight px-4">
+                    Dòng chảy hoạt động và các giá trị tri thức được lan tỏa định kỳ tại "Vương quốc kiến"
+
                 </p>
 
                 {/* card  */}

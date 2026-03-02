@@ -102,7 +102,7 @@ export default function GradeSelector() {
                         và <span className="text-[#3b82f6]">nhịp độ riêng</span> của con
                     </h2>
                     <p className="text-black text-[17px] font-medium px-4">
-                        Để Kiến Trẻ giúp con bạn tìm được lộ trình học tập phù hợp nhất với năng lực và mục tiêu
+                        Cùng Kiến Trẻ "may đo" chương trình học theo đúng nhịp độ của con, <br></br>biến những điểm yếu thành thế mạnh vượt trội
                     </p>
                 </div>
 
@@ -114,7 +114,7 @@ export default function GradeSelector() {
                         style={dotBg}
                     >
                         <h3 className="text-white font-bold text-[18px] lg:text-[20px] text-center mb-6">Chọn lớp học</h3>
-                        <div className="grid grid-cols-2 xs:grid-cols-3 gap-3 md:gap-4 max-w-[420px] mx-auto">
+                        <div className="grid grid-cols-3 gap-3 md:gap-4 max-w-[420px] mx-auto">
                             {grades.map((g) => {
                                 const isActive = activeGrade === g;
                                 return (

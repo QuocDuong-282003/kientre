@@ -25,7 +25,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative bg-white pt-0 pb-24 lg:pt-0 lg:pb-28 overflow-hidden -mt-8">
+        <section className="relative bg-white pt-5 pb-24 lg:pt-0 lg:pb-28 overflow-hidden -mt-8">
             {/* background  */}
             <div className="absolute inset-0 opacity-40 mix-blend-multiply pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #e2e8f0 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
@@ -35,24 +35,23 @@ export default function Hero() {
                     {/* left column text content */}
                     <div className="flex flex-col items-start w-full lg:w-[45%] z-20 xl:pr-10 shrink-0">
                         <div className="flex items-center gap-2 text-[#4b8df8] mb-4 md:mb-6 font-bold text-[10px] sm:text-[11px] tracking-widest uppercase bg-[#f0f5ff] py-1.5 px-3 rounded-full">
-                            <Sparkles className="w-3.5 h-3.5" />
-                            <span>Hệ thống giáo dục phát triển năng lực tư duy toàn diện cho trẻ</span>
+                            {/* <Sparkles className="w-3.5 h-3.5" />
+                            <span>Hệ thống giáo dục phát triển năng lực tư duy toàn diện cho trẻ</span> */}
                         </div>
 
-                        <h1 className="text-[32px] xs:text-[36px] sm:text-[42px] lg:text-[46px] xl:text-[48px] font-bold text-[#1f2937] leading-[1.3] mb-4 md:mb-6 tracking-tight">
-                            Giáo dục là <span className="text-[#3b82f6]">thấu hiểu</span><br />
-                            để tài năng được <br />
-                            <span className="text-[#3b82f6] text-[58px] xs:text-[65px] sm:text-[85px] lg:text-[100px] xl:text-[115px] inline-block leading-[0.9] mt-2 mb-2 font-extrabold tracking-normal">
-                                nâng niu
+                        <h1 className="text-[22px] xs:text-[36px] sm:text-[22px] lg:text-[35px] xl:text-[35px] font-bold text-[#f66600] leading-[1.3] mb-4 md:mb-6 tracking-tight">
+                            KHÔNG CÓ CHUẨN MỰC CHUNG <span className='text-[22px] text-black'> cho một trí tuệ </span>
+                            <span className="text-[#3b82f6] text-[48px] xs:text-[65px] sm:text-[65px] lg:text-[80px] xl:text-[90px] inline-block leading-[0.9] mt-2 mb-2 font-extrabold tracking-normal">
+                                VƯỢT TRỘI
                             </span>
                         </h1>
 
-                        <p className="text-[16px] sm:text-[19px] text-gray-700 mb-8 md:mb-10 max-w-[420px] leading-relaxed font-medium">
-                            Kiến Trẻ kiến tạo nên một vườn ươm hạnh phúc, nơi tư duy nở hoa và cảm xúc của trẻ được vỗ về
+                        <p className="text-[16px] sm:text-[19px] text-black mb-8 md:mb-10 max-w-[580px] leading-relaxed font-medium">
+                            Khi mỗi đứa trẻ mang trong mình một tố chất khác nhau, giáo dục cũng cần sự linh hoạt để không bỏ lỡ tài năng nào. Tại Kiến Trẻ, chúng tôi tập trung tối ưu hóa thế mạnh riêng, giúp mỗi học sinh tự tin bứt phá và thành công theo cách của chính mình.
                         </p>
 
                         <button className="group flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-7 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-bold transition-all shadow-lg hover:-translate-y-1">
-                            Kiểm tra năng lực miễn phí
+                            Nhận đặc quyền cá nhân hóa chuyên biệt
                             <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
                         </button>
                     </div>
